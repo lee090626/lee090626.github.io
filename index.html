@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오늘 뭐 먹지?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍽 오늘 뭐 먹지?</h1>
+    <div class="selects">
+        <select id="type">
+            <option value="">종류 선택</option>
+            <option value="한식">한식</option>
+            <option value="중식">중식</option>
+            <option value="일식">일식</option>
+            <option value="양식">양식</option>
+            <option value="분식">분식</option>
+            <option value="디저트">디저트</option>
+            <option value="베트남식">베트남식</option>
+            <option value="인도식">인도식</option>
+            <option value="아프리카식">아프리카식</option>
+            <option value="패스트푸드">패스트푸드</option>
+          </select>
+          
+          <select id="flavor">
+            <option value="">맛 선택</option>
+            <option value="매운맛">매운맛</option>
+            <option value="짠맛">짠맛</option>
+            <option value="단맛">단맛</option>
+            <option value="담백한맛">담백한맛</option>
+            <option value="새콤한맛">새콤한맛</option>
+          </select>
+          
+    </div>
+    <button id="recommendBtn">추천 받기 🎲</button>
+    <div id="result">🎉 추천 결과가 여기에 나와요!</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
