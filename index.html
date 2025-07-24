@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>오늘 뭐 먹지?</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <h1>🍽 오늘 뭐 먹지?</h1>
     <div class="selects">
-        <select id="type">
+        <select id="type" class="fonter">
             <option value="">종류 선택</option>
             <option value="한식">한식</option>
             <option value="중식">중식</option>
@@ -18,13 +21,9 @@
             <option value="양식">양식</option>
             <option value="분식">분식</option>
             <option value="디저트">디저트</option>
-            <option value="베트남식">베트남식</option>
-            <option value="인도식">인도식</option>
-            <option value="아프리카식">아프리카식</option>
-            <option value="패스트푸드">패스트푸드</option>
           </select>
           
-          <select id="flavor">
+          <select id="flavor" class="fonter">
             <option value="">맛 선택</option>
             <option value="매운맛">매운맛</option>
             <option value="짠맛">짠맛</option>

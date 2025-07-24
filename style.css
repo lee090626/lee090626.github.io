@@ -58,4 +58,6 @@ body {
     font-weight: bold;
     height: 2em;
   }
-  
+.fonter {
+    font-family: "Black Han Sans", sans-serif;
+}
