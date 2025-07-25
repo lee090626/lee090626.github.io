@@ -1,63 +1,80 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=SUIT:wght@400;700&display=swap');
+
 body {
-    font-family: 'Pretendard', sans-serif;
-    background: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    background: white;
-    padding: 40px;
-    border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 350px;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .selects {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  select {
-    width: 48%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-  }
-  
-  button {
-    padding: 12px 20px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 10px;
-    background-color: #ff7675;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #d63031;
-  }
-  
-  #result {
-    margin-top: 30px;
-    font-size: 1.4em;
-    font-weight: bold;
-    height: 2em;
-  }
-.fonter {
-    font-family: "Black Han Sans", sans-serif;
+  font-family: 'SUIT', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, #84fab0, #8fd3f4);
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-section,
+.result-section,
+.info-section {
+  margin-bottom: 2rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#ad {
+  margin: 2rem 0;
+}
+
+.result-section p {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ecf0f1;
+  font-size: 0.9rem;
+  color: #7f8c8d;
 }

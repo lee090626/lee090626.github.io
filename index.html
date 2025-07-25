@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <!-- 기본 메타 정보 -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>오늘 뭐 먹지?</title>
+
+  <!-- SEO를 위한 설명 및 키워드 -->
+  <title>오늘 뭐 먹지? | 음식 추천 웹앱</title>
+  <meta name="description" content="오늘 먹을 음식 고민 끝! 사용자 취향을 반영한 AI 음식 추천 웹앱입니다." />
+  <meta name="keywords" content="음식 추천, AI 추천, 점심 추천, 저녁 메뉴, 오늘 뭐 먹지, 웹앱, 음식 선택" />
+  <meta name="author" content="이형석" />
+
+  <!-- Open Graph (SNS 공유 최적화) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="오늘 뭐 먹지?" />
+  <meta property="og:description" content="사용자 입력 기반 AI 음식 추천 웹앱!" />
+  <meta property="og:url" content="https://lee090626.github.io/" />
+  <meta property="og:image" content="https://lee090626.github.io/thumbnail.png" /> <!-- 썸네일 이미지 경로 넣기 -->
+
+  <!-- Twitter Card (트위터용) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="오늘 뭐 먹지?" />
+  <meta name="twitter:description" content="AI가 오늘의 음식을 추천해줘요!" />
+  <meta name="twitter:image" content="https://lee090626.github.io/thumbnail.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- 웹사이트 색상 정의 (모바일 브라우저용) -->
+  <meta name="theme-color" content="#FF6B6B" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8319588891960553"
-     crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <h1>🍽 오늘 뭐 먹지?</h1>
-    <div class="selects">
-        <select id="type" class="fonter">
-            <option value="">종류 선택</option>
-            <option value="한식">한식</option>
-            <option value="중식">중식</option>
-            <option value="일식">일식</option>
-            <option value="양식">양식</option>
-            <option value="분식">분식</option>
-            <option value="디저트">디저트</option>
-          </select>
-          
-          <select id="flavor" class="fonter">
-            <option value="">맛 선택</option>
-            <option value="매운맛">매운맛</option>
-            <option value="짠맛">짠맛</option>
-            <option value="단맛">단맛</option>
-            <option value="담백한맛">담백한맛</option>
-            <option value="새콤한맛">새콤한맛</option>
-          </select>
-          
-    </div>
-    <button id="recommendBtn">추천 받기 🎲</button>
-    <div id="result">🎉 추천 결과가 여기에 나와요!</div>
-  </div>
-  <script src="script.js"></script>
+  <header>
+    <h1>🍽️ 오늘 뭐 먹지?</h1>
+    <p>AI가 오늘의 메뉴를 추천해드립니다! 아래 버튼을 눌러보세요 😋</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <label for="taste">당신의 입맛은?</label>
+      <select id="taste">
+        <option value="spicy">매운맛</option>
+        <option value="salty">짠맛</option>
+        <option value="sweet">단맛</option>
+        <option value="sour">새콤함</option>
+        <option value="mild">순한맛</option>
+      </select>
+      <button onclick="recommendFood()">추천 받기</button>
+    </section>
+
+    <section class="result-section">
+      <h2>🍜 추천 음식:</h2>
+      <p id="result">여기에 추천 결과가 나옵니다.</p>
+    </section>
+
+    <!-- 광고 삽입 위치 -->
+    <section class="ad-section">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+        data-ad-slot="1234567890"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    </section>
+
+    <section class="info-section">
+      <h3>📌 이 웹사이트는?</h3>
+      <p>이 사이트는 간단한 AI 기반 음식 추천기로, 사용자의 기분이나 입맛에 따라 오늘의 메뉴를 제안합니다. 모두 무료로 제공됩니다!</p>
+      <p>광고 수익은 사이트 유지와 더 나은 기능 개발에 사용됩니다 😊</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 오늘 뭐 먹지? | Made by 이형석</p>
+  </footer>
 </body>
 </html>
