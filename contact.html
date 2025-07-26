@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>문의하기 - 오늘 뭐 먹지?</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>📩 문의하기</h1>
-    <nav>
-      <a href="index.html">홈</a>
-      <a href="about.html">소개</a>
-      <a href="contact.html">문의</a>
-    </nav>
-  </header>
-
-  <main>
-    <h2>개발자에게 메시지를 남겨보세요</h2>
-    <form>
-      <label for="name">이름:</label>
-      <input type="text" id="name" required>
-      <label for="message">메시지:</label>
-      <textarea id="message" rows="5" required></textarea>
-      <button type="submit">보내기</button>
-    </form>
-  </main>
-
-  <footer>
-    © 2025 오늘 뭐 먹지? All rights reserved.
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문의하기 - 오늘 뭐 먹지?</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <h1>오늘 뭐 먹지?</h1>
+        <nav>
+          <a href="index.html">홈</a>
+          <a href="about.html">소개</a>
+          <a href="contact.html" aria-current="page">문의</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section">
+        <div class="section-title">문의하기</div>
+        <form class="recommend-form">
+          <div class="form-row">
+            <label
+              >이름
+              <input
+                type="text"
+                name="name"
+                placeholder="이름을 입력하세요"
+                required
+              />
+            </label>
+            <label
+              >이메일
+              <input
+                type="text"
+                name="email"
+                placeholder="이메일을 입력하세요"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-row">
+            <label
+              >문의 내용
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="문의하실 내용을 입력하세요"
+                required
+              ></textarea>
+            </label>
+          </div>
+          <button type="submit">보내기</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <p>© 2025 오늘 뭐 먹지? All rights reserved.</p>
+        <div class="social-links">
+          <!-- 이미지 아이콘 제거 -->
+        </div>
+        <address>
+          문의: <a href="mailto:support@todayfood.com">support@todayfood.com</a>
+        </address>
+        <div class="footer-links">
+          <a href="#" class="footer-link">이용약관</a> |
+          <a href="#" class="footer-link">개인정보처리방침</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
